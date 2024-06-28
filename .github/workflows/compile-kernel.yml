@@ -51,6 +51,7 @@ on:
         type: choice
         options:
           - clang
+          - gcc
           - gcc-11.3
           - gcc-12.2
           - gcc-12.3

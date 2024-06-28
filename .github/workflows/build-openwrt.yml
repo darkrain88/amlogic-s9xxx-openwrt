@@ -14,7 +14,7 @@ on:
       source_branch:
         description: "Select the source branch"
         required: false
-        default: "openwrt-main"
+        default: "lede-master"
         type: choice
         options:
           - openwrt-main
@@ -23,7 +23,7 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "beikeyun"
         type: choice
         options:
           - all
@@ -205,12 +205,12 @@ on:
       builder_name:
         description: "Set OpenWrt builder signature."
         required: false
-        default: "ophub"
+        default: "lto"
         type: choice
         options:
           - ophub
           - angel
-          - yourname
+          - lto
 
 env:
   FEEDS_CONF: config/${{ inputs.source_branch }}/feeds.conf.default

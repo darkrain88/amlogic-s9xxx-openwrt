@@ -208,7 +208,7 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - lto
 
 env:
   TZ: America/New_York
